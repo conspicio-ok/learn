@@ -1,0 +1,84 @@
+
+
+				TUTO VIM
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			DEPLACEMENT / RECHERCHE :
+
+h, j, k, l  ==  ←, ↓, ↑, →		(h/l = position, j = fleche)
+*w  ==  avance le curseur de * mots (debut du mot)
+*e  ==  avance le curseur de * mots (fin du mot)
+0  ==  se place au debut de la ligne
+$  ==  se place à la fin de la ligne
+CTRL + G  ==  ouvre un mode pour se déplacer dans les lignes (début)
+	gg -> début du fichier
+	*G -> aller à la ligne *
+	G -> fin du fichier
+/[]  ==  recherche [] dans le fichier (n:suivant - N:précédent)
+	?[] = /[] ou n et N sont inverser
+:set ic  ==  ne fais pas la différence entre maj et min 
+	(s'enleve avec :set noic, pour une recherche :/[mot]\c)
+:set hls is  ==  créer une surbrillance 
+	(s'enleve avec :nohlsearch, is : pendant, hls : après)
+%  ==  déplace le curseur sur (), {}, [] corrsepondant respectivement
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			SORTIR / ENREGISTREMENT :
+
+:q!  ==  quitte sans enregistrer
+:w  ==  enregistre sans quitter
+:w [nom]  ==  enregistrer un fichier sous le [nom]
+:wq  == quitte en enregistrant
+v <> :w  ==  enregistre une parti du fichier (<>:déplacement du curseur pour indiquer la partie à enregistrer)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			EDITION :
+
+i  ==  entre en mode insertion sous le curseur
+a  ==  entre en mode insertion après le curseur
+o  ==  créer une ligne en dessous et entre en mode insertion
+O  ==  créer un ligne au dessus et entre en mode insertion
+v  ==  mode visuale
+
+x  ==  effecer le caractère sous le curseur
+dw  ==  efface le mot jusqu'à la fin (+ espace) à partir du curseur
+de  ==  efface le mot jusqu'à la fin à partir du curseur
+d$  == effacer jusquà la fin de la ligne
+d*^  ==  efface * nombre de fois (^ se remplace par un opérateur, w, e, $)
+dd  ==  efface la ligne
+*dd  == efface * ligne
+
+u  ==  retour arrière
+U  ==  retour arrière sur toute la ligne
+CTRL + r  ==  annule le retour arrière
+
+y  ==  copier du texte (utiliser le mode visual pour séléctionner)
+p  ==  colle ce qui vient d'être effacé à la suite (ligne-ligne, mot-mot)
+
+r^  ==  remplace le caractère sous le curseur par ^
+R  ==  réecrit par dessus le texte
+ce  ==  efface le mot et rentre en mode édition (permet de modifier le mot)
+:s/ancien/nouveau  ==  remplace ancien par nouveau (sous le curseur)
+:s/ancien/nouveau/g  ==  remplace ancien par nouveau (toute la ligne)
+:1,2s/ancien/nouveau/g  ==  remplace ancien par nouveau (de la ligne 1 à 2)
+:%s/ancien/nouveau/g  ==  remplace ancien par nouveau (tout le fichier)
+:%s/ancien/nouveau/gc  ==  remplace ancien par nouveau (tout le fichier + demande confirmation)
+
+:r FICHIER  ==  insere le contenue du FICHIER sous le curseur
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+			AUTRES :
+
+:![commande]  ==  permet de taper une comande comme si on se trouer dans le shell
+
+
