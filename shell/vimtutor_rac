@@ -5,6 +5,23 @@
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
+Une commande vim s'effectue avec trois éléments :
+	[opérateur]    [nombre]    déplacement
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Certain opérateur peuvent se doubler pour faire une nouvelle action
+	(souvent appliquant l'opérateur à la ligne)
+
+S'écrivan alors : [nombre] double-opérateur
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
 			DEPLACEMENT / RECHERCHE :
 
 h, j, k, l  ==  ←, ↓, ↑, →		(h/l = position, j = fleche)
@@ -65,6 +82,7 @@ p  ==  colle ce qui vient d'être effacé à la suite (ligne-ligne, mot-mot)
 r^  ==  remplace le caractère sous le curseur par ^
 R  ==  réecrit par dessus le texte
 ce  ==  efface le mot et rentre en mode édition (permet de modifier le mot)
+cc  ==  efface toute la ligne avant de rentrer en mode édition
 :s/ancien/nouveau  ==  remplace ancien par nouveau (sous le curseur)
 :s/ancien/nouveau/g  ==  remplace ancien par nouveau (toute la ligne)
 :1,2s/ancien/nouveau/g  ==  remplace ancien par nouveau (de la ligne 1 à 2)
