@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+	while (condition) {
+		[action];
+	}
+	// while fait la boucle tant que la condition est vrai
+	
+	do {
+		[action];
+	} while (condition);
+	// rentre une fois dans la boucle avant de faire le tant que
+
+	for (i = 0;condition;action sur i) {
+		[action];
+	}
+	return 0;
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	if (condition) {
+		[action];
+	} else if (condition) {
+		[action];
+	} else {
+		[action];
+	}
+	
+	switch (int) {
+		case int:
+			[action];
+			break;
+		...
+		default:
+			[action];
+	}
+	/* marche comme plusieurs faisant a vaut 1 ?, a vaut 2 ? ... */
+	
+	return 0;
+}
