@@ -1,18 +1,23 @@
 #include <stdio.h>
 
-int main() {
-	while (condition) {
+int main()
+{
+	while (condition)
+	{
 		[action];
 	}
 	// while fait la boucle tant que la condition est vrai
 	
-	do {
+	do
+	{
 		[action];
 	} while (condition);
-	// rentre une fois dans la boucle avant de faire le tant que
+	// fais la meme chose que while à l exception qu il rentre obligatoirement une fois dans la boucle
 
-	for (i = 0;condition;action sur i) {
+	for (i = 0;condition;action sur i)
+	{
 		[action];
 	}
+	// while améliorer, on retrouve plusieurs éléments apres le for
 	return 0;
 }

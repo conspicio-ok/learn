@@ -4,9 +4,10 @@
 type nom(parametre) {
 	actions
 }
+un parametre est une variable
 */
 
-void ppomme() {
+void print_pomme() {
 	printf("pomme\n");
 }
 
