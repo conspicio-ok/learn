@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*
-type nom(parametre) {
-	actions
+type nom(parametre.s -> type nom, ...) {
+	actions;
 }
 un parametre est une variable
 */
@@ -12,6 +12,6 @@ void print_pomme() {
 }
 
 int main() {
-	ppomme();
+	print_pomme();
 	return 0;
 }
