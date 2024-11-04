@@ -1,4 +1,5 @@
-string.c
+variable.c
+tableau.c
 fonction.c
 condition
 boucle.c
