@@ -2,11 +2,12 @@
 
 int main()
 {
+	/*
 	while (condition)
 	{
 		[action];
 	}
-	// while fait la boucle tant que la condition est vrai
+	// while fait la boucle tant que la <condition> est vrai
 	
 	do
 	{
@@ -20,4 +21,19 @@ int main()
 	}
 	// while améliorer, on retrouve plusieurs éléments apres le for
 	return 0;
+	*/
+
+
+	int	i;
+
+	i = 0;
+	while (i < 10)
+	{
+		printf("%d\n", i);
+	}
+	for (i=0;i<10;i++)
+	{
+		printf("%d\n", i);
+	}
+	return (0);
 }
