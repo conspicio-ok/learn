@@ -8,7 +8,7 @@ int main () {
 	float nombreDecimal = 9.98;
 	char caractere;
 	char chaine_caractere[6] = "pomme"; // chaine de caractere de 6
-	char *chaine_de_caracere; // autre maniere de la definir
+	// char *chaine_de_caracere; // autre maniere de la definir
 
 	nombreEntier = 42;
 	caractere = 'a' ;
