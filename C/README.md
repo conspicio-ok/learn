@@ -1,5 +1,7 @@
 variable.c
 tableau.c
+constante.c
+printf.c
 fonction.c
 condition
 boucle.c
