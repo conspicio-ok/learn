@@ -7,11 +7,11 @@ type nom(parametre.s -> type nom, ...) {
 un parametre est une variable
 */
 
-void print_pomme() {
-	printf("pomme\n");
+void print_pomme(char *str) {
+	printf("%s", str);
 }
 
 int main() {
-	print_pomme();
+	print_pomme("pomme");
 	return 0;
 }
